@@ -1,5 +1,5 @@
 name:                haskell-abci
-version:             0.1.0.0
+version:             0.10.3.0
 synopsis:            Haskell Application BlockChain Interface (ABCI) Server Library
 description:         Haskell library for writing Application BlockChain Interface (ABCI) servers. Licensed under BSD 3-clause (see LICENSE).
 homepage:            https://github.com/cwgoes/haskell-abci#readme

@@ -22,7 +22,7 @@ main ∷ IO ()
 main = serve defaultHost defaultPort =<< counter False
 
 handleInfo ∷ MVar State → RequestInfo → IO ResponseInfo
-handleInfo state RequestInfo = do
+handleInfo state _ = do
   (State hashCount txCount _) ← readMVar state
   return ResponseInfo {
     _ResponseInfo'data'             = T.concat ["{\"hashes\":", T.pack (Prelude.show hashCount), ",\"txs\":", T.pack (Prelude.show txCount), "}"],
