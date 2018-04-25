@@ -2,8 +2,9 @@ module Network.ABCI (
   serve,
   defaultHost,
   defaultPort,
-  module Proto.Types
+  module Proto.Abci
 ) where
 
 import           Network.ABCI.Server
-import           Proto.Types
+import           Proto.Abci
+

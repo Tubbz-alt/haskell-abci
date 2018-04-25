@@ -12,7 +12,7 @@ import qualified Data.ProtoLens.Encoding as P
 import           Foundation
 import qualified Prelude
 
-import           Proto.Types
+import           Proto.Abci
 
 defaultHost ∷ Prelude.String
 defaultHost = "*"

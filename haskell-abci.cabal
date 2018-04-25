@@ -11,7 +11,7 @@ license-file:        LICENSE
 category:            Web
 build-type:          Custom
 cabal-version:       >=1.10
-extra-source-files:  README.md, src/types.proto
+extra-source-files:  README.md, src/abci.proto, src/gogo.proto, src/descriptor.proto, src/tmlibs-common.proto
 
 custom-setup
   setup-depends: base, Cabal, proto-lens-protoc
@@ -43,7 +43,10 @@ library
   hs-source-dirs:      src
   exposed-modules:     Network.ABCI
   other-modules:       Network.ABCI.Server
-                       Proto.Types
+                       Proto.Abci
+                       Proto.Gogo
+                       Proto.Descriptor
+                       Proto.TmlibsCommon
   default-language:    Haskell2010
   default-extensions:  NoImplicitPrelude
                      , OverloadedStrings

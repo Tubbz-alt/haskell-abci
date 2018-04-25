@@ -4,4 +4,9 @@ packages:
 - .
 extra-deps:
 - network-conduit-1.1.0
-resolver: lts-9.0
+- proto-lens-protoc-0.2.2.3
+- haskell-src-exts-1.19.1
+- process-1.4.3.0
+resolver: lts-11.6
+nix:
+  packages: [zlib, protobuf, haskellPackages.happy]
